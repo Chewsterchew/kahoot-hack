@@ -29,8 +29,12 @@ play.py - Play kahoot normally, from your console!
 #Install Guide (Linux Ubuntu)
 
 1) Run `sudo apt-get update`
+
 2) Install dependicies with `sudo apt-get install git python3.5 python3.5-dev`
+
 3) Git Clone the Repo with `git clone https://github.com/Chewsterchew/kahoot-hack.git kahoot-hack` and then `cd kahoot-hack`
+
+4) Run a program with `python3.5 program.py` replacing program with what you want, such as flood or play.
 
 #Important Info
 This is only a fork of an existing repo, I just forked it to fix some spelling errors bothering me.
