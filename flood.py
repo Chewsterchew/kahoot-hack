@@ -15,17 +15,17 @@ def start_kahoot_run():
   t.start()
 
 def get_input():
-  pin = input("Please Enter the kahoot pin: ")
-  name = input("Please Enter the base name: ")
-  exc = input("Please Enter how many names to add: ")
+  pin = input("Enter the Kahoot Game PIN: ")
+  name = input("What do you want the base name to be?: ")
+  exc = input("How many should join?: ")
   try:
     if (name == None) or (exc == None) or (pin == None):
-      print("Please input properly")
+      print("Error: Input invalid. Please input properly.")
       return None, None, None
     else:
       return int(pin), str(name), int(exc)
   except:
-    print("Please input properly")
+    print("Error: Input invalid. Please input properly")
     error(0,"not proper input", True)
 
 def esc():
@@ -42,7 +42,7 @@ if __name__ == '__main__':
     print("connecting ...")
     for x in range(exc):
       start_kahoot_run()
-    print("\nFinished\nLeave running to keep accounts connected\nPress E to Exit")
+    print("\nTask Complete.\nLeave this program running for the accounts to stay.\nType E and press Enter to Exit")
     esc()
   else:
-    print("Game does not exists with that pin")
+    print("Could not find a game with that pin.")
